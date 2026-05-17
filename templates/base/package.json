@@ -1,0 +1,15 @@
+{
+  "name": "{{name}}",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "build": "lacis build",
+    "dev": "tsx watch server.ts"
+  },
+  "dependencies": {
+    "lacis": "latest"
+  },
+  "devDependencies": {
+    "tsx": "latest"
+  }
+}

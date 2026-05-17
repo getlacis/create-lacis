@@ -1,0 +1,12 @@
+{
+  "name": "{{name}}",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "build": "lacis build",
+    "dev": "lacis dev"
+  },
+  "dependencies": {
+    "lacis": "latest"
+  }
+}
