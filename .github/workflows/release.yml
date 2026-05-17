@@ -35,3 +35,12 @@ jobs:
 
       - name: Publish
         run: npm publish --provenance --access public
+
+      - name: Create GitHub release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh release create "v${{ github.event.client_payload.version }}" \
+            --title "v${{ github.event.client_payload.version }}" \
+            --notes "Synced with lacis v${{ github.event.client_payload.version }}" \
+            --repo getlacis/create-lacis
