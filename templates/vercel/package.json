@@ -8,5 +8,8 @@
   },
   "dependencies": {
     "lacis": "latest"
+  },
+  "devDependencies": {
+    "typescript": "latest"
   }
 }

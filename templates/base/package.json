@@ -10,6 +10,7 @@
     "lacis": "latest"
   },
   "devDependencies": {
-    "tsx": "latest"
+    "tsx": "latest",
+    "typescript": "latest"
   }
 }
