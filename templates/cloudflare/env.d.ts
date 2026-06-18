@@ -3,6 +3,7 @@
 interface Env {
   MY_KV: KVNamespace
   MY_DB: D1Database
+  MY_QUEUE: Queue
   MY_SECRET: string
 }
 
