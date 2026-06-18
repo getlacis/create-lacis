@@ -5,7 +5,7 @@ import { join } from 'path'
 import { scaffold } from './scaffold.js'
 import { detectPackageManager, install } from './install.js'
 
-const VALID_PLATFORMS = ['node', 'bun', 'vercel', 'netlify'] as const
+const VALID_PLATFORMS = ['node', 'bun', 'vercel', 'netlify', 'cloudflare'] as const
 const VALID_VALIDATORS = ['none', 'zod', 'valibot', 'arktype'] as const
 
 type Platform = typeof VALID_PLATFORMS[number]
@@ -97,6 +97,7 @@ async function main() {
         { value: 'bun', label: 'Bun' },
         { value: 'vercel', label: 'Vercel' },
         { value: 'netlify', label: 'Netlify' },
+        { value: 'cloudflare', label: 'Cloudflare Workers' },
       ],
     })
     if (p.isCancel(sel)) { p.cancel('Cancelled'); process.exit(0) }

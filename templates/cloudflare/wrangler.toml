@@ -1,0 +1,17 @@
+name = "{{name}}"
+main = "worker.ts"
+compatibility_date = "2025-06-18"
+compatibility_flags = ["nodejs_compat"]
+
+[observability]
+enabled = true
+
+# Bindings — uncomment what you need:
+# [[kv_namespaces]]
+# binding = "MY_KV"
+# id = ""
+#
+# [[d1_databases]]
+# binding = "MY_DB"
+# database_name = ""
+# database_id = ""

@@ -23,6 +23,7 @@ const VALIDATOR_DEPS: Record<string, Record<string, string>> = {
 const PLATFORM_GITIGNORE_EXTRAS: Record<string, string> = {
   vercel: '.vercel\n',
   netlify: '.netlify\n',
+  cloudflare: '.wrangler\n',
 }
 
 const PLATFORM_TEMPLATE: Record<string, string> = {
@@ -30,6 +31,7 @@ const PLATFORM_TEMPLATE: Record<string, string> = {
   bun: 'bun',
   vercel: 'vercel',
   netlify: 'netlify',
+  cloudflare: 'cloudflare',
 }
 
 const ROUTE_CONTENT: Record<string, string> = {
