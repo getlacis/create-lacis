@@ -12,7 +12,7 @@ interface Env {
 }
 
 declare module 'lacis' {
-  interface Request {
+  interface PlatformContext {
     env: Env
     ctx: ExecutionContext
     cf: IncomingRequestCfProperties
